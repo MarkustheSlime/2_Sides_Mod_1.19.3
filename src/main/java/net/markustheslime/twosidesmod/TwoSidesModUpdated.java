@@ -26,10 +26,6 @@ public class TwoSidesModUpdated
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
-
-        BLOCKS.register(modEventBus);
-        ITEMS.register(modEventBus);
-
         MinecraftForge.EVENT_BUS.register(this);
 
         // Register the item to a creative tab
