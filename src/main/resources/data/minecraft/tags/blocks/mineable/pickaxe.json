@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "twosidesmod:dm_ore",
+    "twosidesmod:dm_block",
+    "twosidesmod:deepslate_dm_ore",
+    "twosidesmod:nether_dm_ore",
+    "twosidesmod:end_dm_ore"
+  ]
+}

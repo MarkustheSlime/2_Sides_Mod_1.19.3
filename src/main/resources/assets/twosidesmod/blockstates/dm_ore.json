@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "twosidesmod:block/dm_ore" }
+  }
+}

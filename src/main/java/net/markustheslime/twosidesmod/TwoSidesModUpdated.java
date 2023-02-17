@@ -1,6 +1,9 @@
 package net.markustheslime.twosidesmod;
 
 import com.mojang.logging.LogUtils;
+import net.markustheslime.twosidesmod.block.ModBlocks;
+import net.markustheslime.twosidesmod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -25,6 +28,9 @@ public class TwoSidesModUpdated
     public TwoSidesModUpdated() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -36,6 +42,37 @@ public class TwoSidesModUpdated
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
+     if(event.getTab() == CreativeModeTabs.INGREDIENTS){
+         event.accept(ModItems.DM_Ingot);
+         event.accept(ModItems.Raw_DM_Ore);
+     }
+     if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS){
+         event.accept(ModBlocks.DM_Ore);
+         event.accept(ModBlocks.Deepslate_DM_Ore);
+         event.accept(ModBlocks.Nether_DM_Ore);
+         event.accept(ModBlocks.End_DM_Ore);
+     }
+     if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS){
+         event.accept(ModBlocks.DM_Ore);
+         event.accept(ModBlocks.Deepslate_DM_Ore);
+         event.accept(ModBlocks.Nether_DM_Ore);
+         event.accept(ModBlocks.End_DM_Ore);
+     }
+     if(event.getTab() == ModCreativeModeTab.ORES){
+         event.accept(ModItems.DM_Ingot);
+         event.accept(ModItems.Raw_DM_Ore);
+         event.accept(ModBlocks.DM_Ore);
+         event.accept(ModBlocks.Deepslate_DM_Ore);
+         event.accept(ModBlocks.Nether_DM_Ore);
+         event.accept(ModBlocks.End_DM_Ore);
+     }
+     if(event.getTab() == ModCreativeModeTab.BLOCKS){
+         event.accept(ModBlocks.DM_Block);
+         event.accept(ModBlocks.DM_Ore);
+         event.accept(ModBlocks.Deepslate_DM_Ore);
+         event.accept(ModBlocks.Nether_DM_Ore);
+         event.accept(ModBlocks.End_DM_Ore);
+     }
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent

@@ -1,0 +1,13 @@
+{
+  "item.twosidesmod.dm_ingot": "Dwarven Magic Ingot",
+  "item.twosidesmod.raw_dm": "Raw Dwarven Magic Ore",
+
+  "block.twosidesmod.dm_block": "Block of Dwarven Magic",
+  "block.twosidesmod.dm_ore": "Dwarven Magic Ore",
+  "block.twosidesmod.deeplate_dm_ore": "Deepslate Dwarven Magic Ore",
+  "block.twosidesmod.nether_dm_ore": "Netherrack Dwarven Magic Ore",
+  "block.twosidesmod.end_dm_ore": "Endstone Dwarven Magic Ore",
+
+  "creativemodetab.ores_tab": "2 Sides Ores",
+  "creativemodetab.blocks_tab": "2 Sides Blocks"
+}
