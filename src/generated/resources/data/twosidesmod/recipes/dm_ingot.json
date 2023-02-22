@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "twosidesmod:dm_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "twosidesmod:dm_ingot"
+  }
+}

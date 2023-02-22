@@ -1,0 +1,9 @@
+// 1.19.3	2023-02-22T14:27:38.506828	Recipes
+6bca10c6a7fe22150943370a988491a6da3eb517 data/twosidesmod/advancements/recipes/building_blocks/dm_ingot.json
+49839dd9b3f90ffa9bfffeaf98061888306966b8 data/twosidesmod/advancements/recipes/misc/dm_block.json
+8397615ec909ee04f413b6999113584b6464f8ac data/twosidesmod/advancements/recipes/misc/dm_ingot_from_blasting_raw_dm.json
+a2682c209aeee47ca8c248d41b8945314807057a data/twosidesmod/advancements/recipes/misc/dm_ingot_from_smelting_raw_dm.json
+ce608fa1787b8dce1515d4e3c720b748b43bea3d data/twosidesmod/recipes/dm_block.json
+b59e9e3dfbc4a7815ce13743324beea64e3ef159 data/twosidesmod/recipes/dm_ingot.json
+a41c48067f8e8e37386d0da7cdcfe10871a33f32 data/twosidesmod/recipes/dm_ingot_from_blasting_raw_dm.json
+0864f125f57be26ecbc0eab0af33c068ae254e9f data/twosidesmod/recipes/dm_ingot_from_smelting_raw_dm.json

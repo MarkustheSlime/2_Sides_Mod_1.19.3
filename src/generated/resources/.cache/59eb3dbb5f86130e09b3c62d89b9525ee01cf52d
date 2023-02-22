@@ -1,0 +1,6 @@
+// 1.19.3	2023-02-22T14:27:38.506828	Loot Tables
+4828eeb86cb10246dc38604419e26c6725fdf78f data/twosidesmod/loot_tables/blocks/deepslate_dm_ore.json
+fbcb661e929e55d8bb4361aeaeaab2cd69a3301a data/twosidesmod/loot_tables/blocks/dm_block.json
+bcc3e0c88a59f137477887805623cf4b39b58fd8 data/twosidesmod/loot_tables/blocks/dm_ore.json
+8556184973e00ac05f770bcd9aeebfc279ab44b8 data/twosidesmod/loot_tables/blocks/end_dm_ore.json
+b6c2674fc1ec134e6a400b98b2ee2f44f1fe5d6d data/twosidesmod/loot_tables/blocks/nether_dm_ore.json
