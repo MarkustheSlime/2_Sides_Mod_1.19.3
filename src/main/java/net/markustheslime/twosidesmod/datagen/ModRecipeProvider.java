@@ -3,6 +3,7 @@ package net.markustheslime.twosidesmod.datagen;
 import net.markustheslime.twosidesmod.TwoSidesModUpdated;
 import net.markustheslime.twosidesmod.block.ModBlocks;
 import net.markustheslime.twosidesmod.item.ModItems;
+import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
@@ -32,11 +33,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.DM_Ingot.get(), RecipeCategory.MISC,
                 ModBlocks.DM_Block.get());
 
-        // ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_OPAL.get())
-        //         .requires(ModBlocks.BLACK_OPAL_BLOCK.get())
-        //         .unlockedBy("has_black_opal_block", inventoryTrigger(ItemPredicate.Builder.item()
-        //                 .of(ModBlocks.BLACK_OPAL_BLOCK.get()).build()))
-        //         .save(consumer);
+        //ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.DM_Ingot.get())
+        //       .requires(ModBlocks.DM_Block.get())
+        //       .unlockedBy("has_black_opal_block", inventoryTrigger(ItemPredicate.Builder.item()
+        //             .of(ModBlocks.DM_Block.get()).build()))
+        //    .save(consumer);
 
         // ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLACK_OPAL_BLOCK.get())
         //         .define('B', ModItems.BLACK_OPAL.get())
@@ -51,19 +52,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void oreSmelting(Consumer<FinishedRecipe> p_250654_, List<ItemLike> p_250172_, RecipeCategory p_250588_, ItemLike p_251868_, float p_250789_, int p_252144_, String p_251687_) {
         oreCooking(p_250654_, RecipeSerializer.SMELTING_RECIPE, p_250172_, p_250588_, p_251868_, p_250789_, p_252144_, p_251687_, "_from_smelting");
     }
+
     protected static void oreBlasting(Consumer<FinishedRecipe> p_248775_, List<ItemLike> p_251504_, RecipeCategory p_248846_, ItemLike p_249735_, float p_248783_, int p_250303_, String p_251984_) {
         oreCooking(p_248775_, RecipeSerializer.BLASTING_RECIPE, p_251504_, p_248846_, p_249735_, p_248783_, p_250303_, p_251984_, "_from_blasting");
     }
 
     protected static void oreCooking(Consumer<FinishedRecipe> p_250791_, RecipeSerializer<? extends AbstractCookingRecipe> p_251817_, List<ItemLike> p_249619_, RecipeCategory p_251154_, ItemLike p_250066_, float p_251871_, int p_251316_, String p_251450_, String p_249236_) {
-        for(ItemLike itemlike : p_249619_) {
+        for (ItemLike itemlike : p_249619_) {
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), p_251154_, p_250066_, p_251871_, p_251316_, p_251817_).group(p_251450_)
                     .unlockedBy(getHasName(itemlike), has(itemlike)).save(p_250791_, new ResourceLocation(TwoSidesModUpdated.MOD_ID, getItemName(p_250066_)) + p_249236_ + "_" + getItemName(itemlike));
         }
     }
 
     protected static void nineBlockStorageRecipes(Consumer<FinishedRecipe> p_249580_, RecipeCategory p_251203_, ItemLike p_251689_, RecipeCategory p_251376_, ItemLike p_248771_) {
-        nineBlockStorageRecipes(p_249580_, p_251203_, p_251689_, p_251376_, p_248771_, getSimpleRecipeName(p_248771_), (String)null, getSimpleRecipeName(p_251689_), (String)null);
+      nineBlockStorageRecipes(p_249580_, p_251203_, p_251689_, p_251376_, p_248771_, getSimpleRecipeName(p_248771_), (String)null, getSimpleRecipeName(p_251689_), (String)null);
     }
 
     protected static void nineBlockStorageRecipes(Consumer<FinishedRecipe> p_250423_, RecipeCategory p_250083_, ItemLike p_250042_,
