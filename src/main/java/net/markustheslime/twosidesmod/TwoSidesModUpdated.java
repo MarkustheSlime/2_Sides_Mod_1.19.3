@@ -51,13 +51,23 @@ public class TwoSidesModUpdated
          event.accept(ModBlocks.Deepslate_DM_Ore);
          event.accept(ModBlocks.Nether_DM_Ore);
          event.accept(ModBlocks.End_DM_Ore);
+
+         event.accept(ModBlocks.Prism_Leaves);
+         event.accept(ModBlocks.Prism_Log);
+         event.accept(ModBlocks.Prism_Wood);
+         event.accept(ModBlocks.Stripped_Prism_Log);
+         event.accept(ModBlocks.Stripped_Prism_Wood);
+         event.accept(ModBlocks.Prism_Sapling);
      }
-     if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS){
+
+     if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS){
          event.accept(ModBlocks.DM_Ore);
          event.accept(ModBlocks.Deepslate_DM_Ore);
          event.accept(ModBlocks.Nether_DM_Ore);
          event.accept(ModBlocks.End_DM_Ore);
+         event.accept(ModBlocks.Prism_Planks);
      }
+
      if(event.getTab() == ModCreativeModeTab.ORES){
          event.accept(ModItems.DM_Ingot);
          event.accept(ModItems.Raw_DM_Ore);
@@ -72,6 +82,14 @@ public class TwoSidesModUpdated
          event.accept(ModBlocks.Deepslate_DM_Ore);
          event.accept(ModBlocks.Nether_DM_Ore);
          event.accept(ModBlocks.End_DM_Ore);
+
+         event.accept(ModBlocks.Prism_Leaves);
+         event.accept(ModBlocks.Prism_Log);
+         event.accept(ModBlocks.Prism_Planks);
+         event.accept(ModBlocks.Prism_Wood);
+         event.accept(ModBlocks.Stripped_Prism_Log);
+         event.accept(ModBlocks.Stripped_Prism_Wood);
+         event.accept(ModBlocks.Prism_Sapling);
      }
     }
 

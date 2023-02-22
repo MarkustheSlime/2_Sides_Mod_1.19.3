@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "twosidesmod:prism_log",
+    "twosidesmod:prism_wood",
+    "twosidesmod:stripped_prism_log",
+    "twosidesmod:stripped_prism_wood"
+  ]
+}
